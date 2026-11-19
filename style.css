@@ -18,3 +18,38 @@ ul{padding-left:22px}li{margin:0 0 14px}.section-note{color:var(--muted)}
 .member{display:flex;align-items:flex-start;gap:20px;margin:24px 0}.member-avatar{width:82px;height:95px;flex-shrink:0;background:#f1ebf8;border-radius:3px}.member h3{margin:0 0 2px}.member p{margin:0}
 footer{border-top:1px solid var(--line);padding-top:15px;margin-top:65px;color:var(--muted);font-size:13px}
 @media(max-width:600px){.container{padding:24px 19px 44px}.site-nav{gap:8px 16px;margin-bottom:30px}.intro{flex-direction:column-reverse;gap:20px}.portrait{width:140px;min-width:140px;height:160px}h1{font-size:29px}h2{font-size:21px}}
+
+
+/* Profile photo */
+.intro {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.intro > div {
+  flex: 1;
+}
+
+.intro img.photo {
+  width: 160px;
+  height: 190px;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
+/* Mobile version */
+@media (max-width: 600px) {
+  .intro {
+    flex-direction: column;
+  }
+
+  .intro img.photo {
+    width: 150px;
+    height: 180px;
+  }
+}
