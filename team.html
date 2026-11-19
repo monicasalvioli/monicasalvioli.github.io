@@ -1,38 +1,255 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Research team and collaborators of Monica Salvioli.">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
   <title>Team | Monica Salvioli</title>
-  <link rel="stylesheet" href="style.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      color: #333;
+      background: #fff;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 880px;
+      margin: 65px auto;
+      padding: 0 28px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      border-bottom: 1px solid #e8dff1;
+      padding-bottom: 18px;
+      margin-bottom: 38px;
+    }
+
+    a {
+      color: #7654a3;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    nav a {
+      font-size: 15px;
+    }
+
+    nav a.active {
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 400;
+      color: #25232b;
+      margin-bottom: 10px;
+    }
+
+    .intro {
+      margin-bottom: 40px;
+      color: #555;
+    }
+
+    .member {
+      display: flex;
+      align-items: flex-start;
+      gap: 25px;
+      padding: 25px 0;
+      border-bottom: 1px solid #f0eaf7;
+    }
+
+    .avatar {
+      width: 110px;
+      height: 130px;
+      flex-shrink: 0;
+      background: #f0eaf7;
+      color: #7654a3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 27px;
+      border-radius: 5px;
+    }
+
+    .member-info {
+      flex: 1;
+    }
+
+    .member-info h2 {
+      font-size: 20px;
+      font-weight: 500;
+      color: #7654a3;
+      margin: 0 0 5px;
+    }
+
+    .position {
+      color: #333;
+      margin: 0;
+    }
+
+    .university {
+      color: #666;
+      margin: 0;
+    }
+
+    .research {
+      margin-top: 10px;
+      color: #444;
+    }
+
+    footer {
+      border-top: 1px solid #e8dff1;
+      margin-top: 55px;
+      padding-top: 15px;
+      font-size: 13px;
+      color: #888;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 30px auto;
+        padding: 0 20px;
+      }
+
+      nav {
+        gap: 15px;
+      }
+
+      .member {
+        gap: 15px;
+      }
+
+      .avatar {
+        width: 75px;
+        height: 90px;
+        font-size: 20px;
+      }
+
+      .member-info h2 {
+        font-size: 18px;
+      }
+    }
+  </style>
 </head>
+
 <body>
+
 <main class="container">
-  <nav class="site-nav" aria-label="Main navigation">
+
+  <!-- NAVIGATION -->
+  <nav aria-label="Main navigation">
     <a href="index.html">Home</a>
     <a href="research.html">Research</a>
-    <a href="team.html" aria-current="page">Team</a>
+    <a href="team.html"
+       class="active"
+       aria-current="page">Team</a>
     <a href="publications.html">Publications</a>
     <a href="teaching.html">Teaching</a>
   </nav>
+
+  <!-- PAGE TITLE -->
   <h1>Team</h1>
-  <p>This page will introduce my research team and collaborators.</p>
-  <h2>team members</h2>
-  <p class="section-note">Team members will be added here.</p>
-  <!-- Example: copy this block for a real member, removing the comment markers.
-  <div class="member">
-    <div class="member-avatar" aria-hidden="true"></div>
-    <div>
-      <h3>First name Last name</h3>
-      <p>Position</p>
-      <p class="small">Institution</p>
+
+  <p class="intro">
+    Meet the people I work with at
+    Maastricht University.
+  </p>
+
+  <!-- SPRIHA JOSHI -->
+  <section class="member">
+    <div class="avatar" aria-hidden="true">
+      SJ
     </div>
-  </div>
-  -->
-  <h2>collaborators</h2>
-  <p class="section-note">Research collaborators will be added here.</p>
-  <footer>© Monica Salvioli · Hosted on GitHub Pages</footer>
+
+    <div class="member-info">
+      <h2>Spriha Joshi</h2>
+
+      <p class="position">
+        PhD Candidate
+      </p>
+
+      <p class="university">
+        Maastricht University
+      </p>
+
+      <p class="research">
+        <strong>Research:</strong>
+        Game Theory and Criminal Networks
+      </p>
+    </div>
+  </section>
+
+  <!-- SHAJENNA RADUZZI -->
+  <section class="member">
+    <div class="avatar" aria-hidden="true">
+      SR
+    </div>
+
+    <div class="member-info">
+      <h2>Shajenna Raduzzi</h2>
+
+      <p class="position">
+        PhD Candidate
+      </p>
+
+      <p class="university">
+        Maastricht University
+      </p>
+
+      <p class="research">
+        <strong>Research:</strong>
+        Mathematical Modeling and AI for
+        Infection Prevention
+      </p>
+    </div>
+  </section>
+
+  <!-- NICOLAS THIEL -->
+  <section class="member">
+    <div class="avatar" aria-hidden="true">
+      NT
+    </div>
+
+    <div class="member-info">
+      <h2>Nicolas Thiel</h2>
+
+      <p class="position">
+        Research Assistant
+      </p>
+
+      <p class="university">
+        Maastricht University
+      </p>
+
+      <p class="research">
+        <strong>Research:</strong>
+        Cooperative Game Theory and Genes
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; Monica Salvioli.
+    Hosted on GitHub Pages.
+  </footer>
+
 </main>
+
 </body>
 </html>
