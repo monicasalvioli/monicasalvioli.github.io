@@ -1,24 +1,256 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Teaching activities of Monica Salvioli.">
-  <title>Teaching | Monica Salvioli</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>Teaching & Education | Monica Salvioli</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      color: #333;
+      background: #fff;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 880px;
+      margin: 65px auto;
+      padding: 0 28px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      border-bottom: 1px solid #e8dff1;
+      padding-bottom: 18px;
+      margin-bottom: 38px;
+    }
+
+    a {
+      color: #7654a3;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    nav a {
+      font-size: 15px;
+    }
+
+    nav a.active {
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 400;
+      color: #25232b;
+      margin-bottom: 25px;
+    }
+
+    h2 {
+      font-size: 21px;
+      font-weight: 400;
+      color: #7654a3;
+      border-bottom: 1px solid #e8dff1;
+      padding-bottom: 8px;
+      margin-top: 42px;
+      margin-bottom: 18px;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    .courses {
+      list-style: none;
+      padding: 0;
+    }
+
+    .courses li {
+      margin-bottom: 18px;
+    }
+
+    .course-name {
+      font-weight: 600;
+    }
+
+    .course-info {
+      color: #666;
+      font-size: 14px;
+    }
+
+    .project {
+      margin-bottom: 28px;
+    }
+
+    .project-title {
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .project-description {
+      margin: 4px 0;
+    }
+
+    .funding {
+      color: #7654a3;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    footer {
+      border-top: 1px solid #e8dff1;
+      margin-top: 55px;
+      padding-top: 15px;
+      font-size: 13px;
+      color: #888;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 30px auto;
+        padding: 0 20px;
+      }
+
+      nav {
+        gap: 15px;
+      }
+
+      h1 {
+        font-size: 29px;
+      }
+    }
+  </style>
 </head>
+
 <body>
+
 <main class="container">
-  <nav class="site-nav" aria-label="Main navigation">
+
+  <!-- NAVIGATION -->
+  <nav aria-label="Main navigation">
     <a href="index.html">Home</a>
     <a href="research.html">Research</a>
     <a href="team.html">Team</a>
     <a href="publications.html">Publications</a>
-    <a href="teaching.html" aria-current="page">Teaching</a>
+    <a href="teaching.html"
+       class="active"
+       aria-current="page">Teaching</a>
   </nav>
-  <h1>Teaching</h1>
-  <p class="section-note">Information about courses and teaching activities will be added here.</p>
-  <footer>© Monica Salvioli · Hosted on GitHub Pages</footer>
+
+  <h1>Teaching & Education</h1>
+
+  <!-- CURRENT TEACHING -->
+  <section>
+    <h2>Current Teaching</h2>
+
+    <p>
+      I am currently teaching the following
+      courses at Maastricht University:
+    </p>
+
+    <ul class="courses">
+
+      <li>
+        <div class="course-name">
+          Game Theory
+        </div>
+        <div class="course-info">
+          Department of Advanced Computing
+          Sciences (DACS) &mdash;
+          Bachelor's level
+        </div>
+      </li>
+
+      <li>
+        <div class="course-name">
+          Algorithmic Game Theory
+        </div>
+        <div class="course-info">
+          Department of Advanced Computing
+          Sciences (DACS) &mdash;
+          Master's level
+        </div>
+      </li>
+
+      <li>
+        <div class="course-name">
+          Optimization
+        </div>
+        <div class="course-info">
+          University College Maastricht (UCM)
+        </div>
+      </li>
+
+    </ul>
+  </section>
+
+  <!-- EDUCATION PROJECTS -->
+  <section>
+    <h2>Education Projects</h2>
+
+    <div class="project">
+      <p class="project-title">
+        Linear Algebra Card Game for Enhanced
+        Conceptual Understanding
+      </p>
+
+      <p class="project-description">
+        An educational card game designed to
+        enhance conceptual understanding of
+        linear algebra in FSE and SBE programmes.
+      </p>
+
+      <p class="funding">
+        Funded by EDLAB &mdash; &euro;5,000
+      </p>
+    </div>
+
+    <div class="project">
+      <p class="project-title">
+        Optimization for Sustainable
+        Decision-Making
+      </p>
+
+      <p class="funding">
+        Funded by Maastricht University,
+        Sustainability Roadmap 2030
+        &mdash; &euro;5,000
+      </p>
+    </div>
+
+    <div class="project">
+      <p class="project-title">
+        Science Outreach Activities
+      </p>
+
+      <p class="funding">
+        Funded by the FSE Science Communication
+        Incubator &mdash; &euro;5,000
+      </p>
+    </div>
+
+  </section>
+
+  <footer>
+    &copy; Monica Salvioli.
+    Hosted on GitHub Pages.
+  </footer>
+
 </main>
+
 </body>
 </html>
