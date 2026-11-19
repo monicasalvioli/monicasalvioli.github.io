@@ -1,271 +1,55 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-
-  <title>Monica Salvioli</title>
-  <meta name="description"
-        content="Personal academic website of Monica Salvioli">
-
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 16px;
-      line-height: 1.7;
-      color: #333;
-      background: #fff;
-      margin: 0;
-      padding: 0;
-    }
-
-    .container {
-      max-width: 880px;
-      margin: 65px auto;
-      padding: 0 28px;
-    }
-
-    h1 {
-      font-size: 32px;
-      font-weight: 400;
-      color: #222;
-      margin: 0 0 8px;
-    }
-
-    h2 {
-      font-size: 21px;
-      font-weight: 400;
-      color: #293f56;
-      margin-top: 38px;
-      margin-bottom: 12px;
-      border-bottom: 1px solid #e5e5e5;
-      padding-bottom: 6px;
-    }
-
-    a {
-      color: #37658a;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    p {
-      margin: 12px 0;
-    }
-
-    .header {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 35px;
-      margin-bottom: 30px;
-    }
-
-    .header-text {
-      flex: 1;
-    }
-
-    .affiliation {
-      color: #666;
-      margin-top: 5px;
-    }
-
-    .photo {
-      width: 165px;
-      height: 190px;
-      background: #edf0f2;
-      color: #71808b;
-      border-radius: 3px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-shrink: 0;
-      font-size: 14px;
-      text-align: center;
-    }
-
-    .news-item {
-      margin-bottom: 14px;
-    }
-
-    .date {
-      color: #777;
-      font-size: 14px;
-    }
-
-    .publications {
-      padding-left: 24px;
-    }
-
-    .publications li {
-      margin-bottom: 20px;
-    }
-
-    .pub-title {
-      font-weight: 600;
-    }
-
-    .pub-details {
-      font-size: 14px;
-      color: #666;
-    }
-
-    footer {
-      font-size: 13px;
-      color: #888;
-      border-top: 1px solid #eee;
-      margin-top: 55px;
-      padding-top: 15px;
-    }
-
-    @media (max-width: 600px) {
-      .container {
-        margin: 30px auto;
-        padding: 0 20px;
-      }
-
-      .header {
-        flex-direction: column;
-        gap: 20px;
-      }
-
-      .photo {
-        width: 140px;
-        height: 160px;
-      }
-
-      h1 {
-        font-size: 29px;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Monica Salvioli — Assistant Professor in Game Theory at Maastricht University.">
+  <title>Monica Salvioli | Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <main class="container">
+<main class="container">
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="research.html">Research</a>
+    <a href="team.html">Team</a>
+    <a href="publications.html">Publications</a>
+    <a href="teaching.html">Teaching</a>
+  </nav>
 
-    <!-- HEADER -->
-    <header class="header">
-        
-<div class="header-text">
-  <h1>Monica Salvioli</h1>
+  <header class="intro">
+    <div>
+      <h1>Monica Salvioli</h1>
+      <p class="affiliation">Assistant Professor in Game Theory<br>
+      <a href="https://www.maastrichtuniversity.nl/">Department of Advanced Computing Sciences<br>Maastricht University</a></p>
+    </div>
+    <!-- Replace this placeholder with your photo later. -->
+    <div class="portrait" aria-label="Photo placeholder">Photo coming soon</div>
+  </header>
 
-  <p class="affiliation">
-    Assistant Professor in Game Theory<br>
-    Department of Advanced Computing Sciences<br>
-    Maastricht University
-  </p>
-</div>
+  <section aria-label="About me">
+    <p>I am an Assistant Professor in Game Theory at the Department of Advanced Computing Sciences, Maastricht University.</p>
+    <p>My research focuses on bridging mathematical models and clinical applications, with a particular interest in modeling cancer treatment through evolutionary game theory.</p>
+  </section>
 
+  <section>
+    <h2>news</h2>
+    <p class="section-note">Research and academic updates will be added here.</p>
+  </section>
 
-        <p class="affiliation">
-          Academic Website<br>
-          Affiliation to be added
-        </p>
-      </div>
+  <section>
+    <h2>research interests</h2>
+    <p>Evolutionary game theory · Mathematical oncology · Cancer treatment modeling</p>
+    <p><a href="research.html">More about my research</a></p>
+  </section>
 
-      <div class="photo">
-        Photo coming soon
-      </div>
-    </header>
+  <section>
+    <h2>selected publications</h2>
+    <p class="section-note">Selected publications will be added here.</p>
+    <p><a href="publications.html">Publications page</a></p>
+  </section>
 
-    <!-- ABOUT -->
-<section id="about">
-  <p>
-    I am an Assistant Professor in Game Theory
-    at the Department of Advanced Computing
-    Sciences, Maastricht University.
-  </p>
-
-  <p>
-    My research focuses on bridging mathematical
-    models and clinical applications, with a
-    particular interest in modeling cancer
-    treatment through evolutionary game theory.
-  </p>
-</section>
-
-
-    <!-- NEWS -->
-    <section id="news">
-      <h2>news</h2>
-
-      <div class="news-item">
-        <span class="date">Updates</span> |
-        News about my research and academic
-        activities will appear here.
-      </div>
-    </section>
-
-    <!-- RESEARCH -->
-    <section id="research">
-      <h2>research interests</h2>
-
-      <p>
-        This section will describe my main
-        research interests and ongoing projects.
-      </p>
-    </section>
-
-    <!-- PUBLICATIONS -->
-    <section id="publications">
-      <h2>selected publications</h2>
-
-      <p>
-        A selection of my publications
-        will be available here.
-      </p>
-
-      <!-- Future publication format:
-      <ol class="publications">
-        <li>
-          <div class="pub-title">
-            Title of the publication
-          </div>
-          Monica Salvioli and Coauthors
-          <div class="pub-details">
-            Journal or conference, year
-          </div>
-        </li>
-      </ol>
-      -->
-    </section>
-
-    <!-- TEACHING -->
-    <section id="teaching">
-      <h2>teaching</h2>
-
-      <p>
-        Information about teaching activities
-        will be added here.
-      </p>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact">
-      <h2>contact</h2>
-
-      <p>
-        GitHub:
-        <a href="https://github.com/monicasalvioli">
-          monicasalvioli
-        </a>
-      </p>
-    </section>
-
-    <footer>
-      &copy; Monica Salvioli.
-      Hosted on GitHub Pages.
-    </footer>
-
-  </main>
+  <footer>© Monica Salvioli · Hosted on GitHub Pages</footer>
+</main>
 </body>
 </html>
