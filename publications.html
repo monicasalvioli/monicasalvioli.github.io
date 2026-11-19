@@ -2,31 +2,116 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Publications of Monica Salvioli.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Publications | Monica Salvioli</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+
+* { box-sizing: border-box; }
+body { margin: 0; background: #fff; color: #333; font: 16px/1.7 Arial, Helvetica, sans-serif; }
+.container { max-width: 880px; margin: 65px auto; padding: 0 28px; }
+nav { display: flex; flex-wrap: wrap; gap: 24px; padding-bottom: 18px; margin-bottom: 38px; border-bottom: 1px solid #e8dff1; }
+a { color: #7654a3; text-decoration: none; }
+a:hover { text-decoration: underline; }
+nav a { font-size: 15px; }
+nav .active { font-weight: bold; }
+h1 { font-size: 32px; font-weight: 400; color: #25232b; margin: 0 0 26px; }
+h2 { font-size: 21px; font-weight: 400; color: #7654a3; border-bottom: 1px solid #e8dff1; padding-bottom: 7px; margin: 35px 0 17px; }
+.publication { margin-bottom: 24px; }
+.publication .title { font-weight: 600; color: #7654a3; line-height: 1.5; }
+.publication .authors { margin: 4px 0 0; }
+.publication .venue { margin: 2px 0 0; font-size: 14px; color: #6b6b6b; font-style: italic; }
+footer { font-size: 13px; color: #888; border-top: 1px solid #e8dff1; padding-top: 15px; margin-top: 55px; }
+@media (max-width: 600px) { .container { margin: 30px auto; padding: 0 20px; } nav { gap: 15px; } h1 { font-size: 29px; } }
+
+  </style>
 </head>
 <body>
 <main class="container">
-  <nav class="site-nav" aria-label="Main navigation">
+  <nav aria-label="Main navigation">
     <a href="index.html">Home</a>
     <a href="research.html">Research</a>
     <a href="team.html">Team</a>
-    <a href="publications.html" aria-current="page">Publications</a>
+    <a href="publications.html" class="active" aria-current="page">Publications</a>
     <a href="teaching.html">Teaching</a>
   </nav>
   <h1>Publications</h1>
-  <p class="section-note">My publications will be listed here.</p>
-  <!-- Example publication structure:
-  <ol>
-    <li><strong>Publication title</strong><br>
-      Authors<br><span class="small">Journal / Conference, Year</span><br>
-      <a href="https://example.org/">Paper</a>
-    </li>
-  </ol>
-  -->
-  <footer>© Monica Salvioli · Hosted on GitHub Pages</footer>
+  <section aria-label="Publications from 2026">
+    <h2>2026</h2>
+    <article class="publication">
+      <div class="title">Linear Algebra Card Game</div>
+      <p class="authors">Martijn Boussé, Monica Salvioli, Philippe Dreesen, Max Sondag, Marieke Musegaas, Ralf Peeters</p>
+      <p class="venue">2026</p>
+    </article>
+  </section>
+  <section aria-label="Publications from 2024">
+    <h2>2024</h2>
+    <article class="publication">
+      <div class="title">The effect of tumor composition on the success of adaptive therapy: The case of metastatic Castrate-Resistant Prostate Cancer</div>
+      <p class="authors">Monica Salvioli, Len Vandelaer, Esther Baena, Katharina Schneider, Rachel Cavill, Kateřina Staňková</p>
+      <p class="venue">PLOS ONE, 19(9), e0308173</p>
+    </article>
+    <article class="publication">
+      <div class="title">Stackelberg evolutionary games of cancer treatment: What treatment strategy to choose if cancer can be stabilized?</div>
+      <p class="authors">Monica Salvioli, Hasti Garjani, Mohammadreza Satouri, Mark Broom, Yannick Viossat, Joel S. Brown, Johan Dubbeldam, Kateřina Staňková</p>
+      <p class="venue">Dynamic Games and Applications, pp. 1–20</p>
+    </article>
+  </section>
+  <section aria-label="Publications from 2023">
+    <h2>2023</h2>
+    <article class="publication">
+      <div class="title">Stackelberg evolutionary game theory: how to manage evolving systems</div>
+      <p class="authors">Alexander Stein, Monica Salvioli, Hasti Garjani, Johan Dubbeldam, Yannick Viossat, Joel S. Brown, Kateřina Staňková</p>
+      <p class="venue">Philosophical Transactions of the Royal Society B, 378(1876), 20210495</p>
+    </article>
+  </section>
+  <section aria-label="Publications from 2021">
+    <h2>2021</h2>
+    <article class="publication">
+      <div class="title">The contribution of evolutionary game theory to understanding and treating cancer</div>
+      <p class="authors">Benjamin Wölfl, Hedy te Rietmole, Monica Salvioli, Artem Kaznatcheev, Frank Thuijsman, Joel S. Brown, Boudewijn Burgering, Kateřina Staňková</p>
+      <p class="venue">Dynamic Games and Applications, pp. 1–30</p>
+    </article>
+    <article class="publication">
+      <div class="title">Fisheries management as a Stackelberg Evolutionary Game: Finding an evolutionarily enlightened strategy</div>
+      <p class="authors">Monica Salvioli, Johan Dubbeldam, Kateřina Staňková, Joel S. Brown</p>
+      <p class="venue">PLOS ONE, 16(1), e0245255</p>
+    </article>
+    <article class="publication">
+      <div class="title">Evolutionary dynamics of treatment-induced resistance in cancer informs understanding of rapid evolution in natural systems</div>
+      <p class="authors">Mariyah Pressley, Monica Salvioli, David B. Lewis, Christina L. Richards, Joel S. Brown, Kateřina Staňková</p>
+      <p class="venue">Frontiers in Ecology and Evolution, 9, pp. 1–22</p>
+    </article>
+    <article class="publication">
+      <div class="title">Is the Success of Adaptive Therapy in Metastatic Castrate Resistant Prostate Cancer Influenced by Cell-Type-Dependent Production of Prostate Specific Antigen?</div>
+      <p class="authors">Monica Salvioli, Len Vandelaer, Katharina Schneider, Rachel Cavill, Katerina Stankova</p>
+      <p class="venue">bioRxiv</p>
+    </article>
+  </section>
+  <section aria-label="Publications from 2020">
+    <h2>2020</h2>
+    <article class="publication">
+      <div class="title">COVID-19 pandemic: a mobility-dependent SEIR model with undetected cases in Italy, Europe, and US</div>
+      <p class="authors">Nicola Picchiotti, Monica Salvioli, Elena Zanardini, Francesco Missale</p>
+      <p class="venue">2020</p>
+    </article>
+  </section>
+  <section aria-label="Publications from 2017">
+    <h2>2017</h2>
+    <article class="publication">
+      <div class="title">EBHS in European brown hares (Lepus europaeus): disease dynamics and control</div>
+      <p class="authors">Monica Salvioli, Sara Pasquali, Antonio Lavazza, Mariagrazia Zanoni, Vittorio Guberti, Mario Chiari, Gianni Gilioli, et al.</p>
+      <p class="venue">Hystrix, 28(2), pp. 202–207</p>
+    </article>
+  </section>
+  <section aria-label="Publications from 2016">
+    <h2>2016</h2>
+    <article class="publication">
+      <div class="title">Simulating the impact of crossover kidney transplantation on the nord italia transplant program</div>
+      <p class="authors">Monica Salvioli, Roberto Lucchetti, Rosanna Torelli</p>
+      <p class="venue">Games, 7(4), article 30</p>
+    </article>
+  </section>
+  <footer>&copy; Monica Salvioli. Hosted on GitHub Pages.</footer>
 </main>
 </body>
 </html>
